@@ -9,11 +9,68 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Product T-shirts</h1>
     </header>
     <main>
       <form>
         <!-- write your html here-->
+
+        <!-- 1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters. -->
+        
+          <label for="username">Name</label>
+          <input type="text" id="username" minlength="2" required/>
+
+          <!-- 2. What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern. -->
+       
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+
+          <!-- 3. What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours? -->
+
+          <fieldset>
+            <legend>Choose a colour</legend>
+            
+            <label for="red">Red</label>
+            <input type="radio" id="red" name="colour" value="red" required>
+            
+            <label for="green">Green</label>
+            <input type="radio" id="green" name="colour"  value="green" required>
+
+            <label for="white">White</label>
+            <input type="radio" id="white" name="colour"  value="white" required>
+          
+
+          </fieldset>
+
+           <!-- 4. What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL -->
+
+          <fieldset>
+            <legend>Choose a size</legend>
+            
+            <label for="xsmall">XS</label>
+            <input type="radio" id="xsmall" name="size" value="xsmall" required>
+
+            <label for="small">S</label>
+            <input type="radio" id="small" name="size" value="small" required>
+
+            <label for="medium">M</label>
+            <input type="radio" id="medium" name="size" value="medium" required>
+
+            <label for="large">L</label>
+            <input type="radio" id="large" name="size" value="large" required>
+
+            <label for="xlarge">XL</label>
+            <input type="radio" id="xlarge" name="size" value="xlarge" required>
+
+            <label for="xxlarge">XXL</label>
+            <input type="radio" id="xxlarge" name="size" value="xxlarge" required>
+
+
+          </fieldset>
+
+          <button type="button">Submit</button>
+        
+
         
         <!-- 
           try writing out the requirements first as comments
