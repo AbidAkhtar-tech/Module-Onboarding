@@ -49,15 +49,20 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-  padding-bottom: 60px;
+  padding-bottom: calc(var(--space) * 6);
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  margin-top: var(--space);
+  padding: var(--space);
+  background: var(--paper);
 }
 
 /* ====== Articles Grid Layout ====
